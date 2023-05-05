@@ -82,59 +82,36 @@ const JobList = () => {
   const [value, setValue] = React.useState(0);
 
   const experienceItems = {
-    Amazon: {
-      jobTitle: "Software Development Engineer @",
-      duration: "JUL 2022 - PRESENT",
+    CashierBasket: {
+      jobTitle: "Chief Information Officer @",
+      duration: "Jan 2021 - PRESENT",
       desc: [
-        "Collaborate with experienced cross-disciplinary Amazonians to conceive, design, and bring innovative products and services to market.",
-        "Design and build innovative technologies in a large distributed computing environment and help lead fundamental changes in the industry.",
-        "Build distributed storage, index, and query systems that are scalable, fault-tolerant, low cost, and easy to manage/use."
+        "We make shopping enjoyable, convenient and a great experience again.",
+        "A small team of six is building the next unicorn  SAAS startup with a complete overhaul of shopping as we know it. Putting the End user time as the biggest priority shopping will be fun, smart and convenient since this is the next generation of shopping built with the newest techstack & love. ", 
+        "Full development cycle from an IDEA to MVP currently in charge of the Mobile application development."
       ]
     },
-    Wattpad: {
-      jobTitle: "Software Engineering Intern @",
-      duration: "MAY 2020 - APR 2021",
+    Internship: {
+      jobTitle: "FM Intern at U.S. Embassy Budapest @",
+      duration: "AUG 2020 - FEB 2021",
       desc: [
-        "Developed a responsive React web page (the new Story Details) from scratch, both on client and server side, for an app with massive scale (2 billion daily requests).",
-        "Iteratively built web experiences for 80 million users across high-traffic pages.",
-        "Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations."
+        "Interns in an embassy typically have various responsibilities and tasks depending on the specific embassy and its needs interns may engage in:",
+        "Public Diplomacy and Outreach: Interns may contribute to the embassy's public diplomacy efforts by assisting in the organization of cultural events, educational programs, or exchange programs. They may help manage social media accounts, draft press releases, or engage with the local community to promote positive relations.",
+        "Research and Analysis, Assistance to Consular Services, Language Support."
       ]
     },
-    "University of Toronto": {
-      jobTitle: "Research Engineer @",
-      duration: "MAY 2021 - SEPT 2021",
+    "International Diplomatic Student Association": {
+      jobTitle: "Vice President: PR & Communications @",
+      duration: "MAY 2019 - SEPT 2020",
       desc: [
-        "Developing and researching an NLP-based framework using state-of-the-art tools like Spacy and Stanza to facilitate the derivation of requirements from health data by leveraging syntactic dependencies, entity-recognition and rule-based match-making.",
-        " Application selected for DCS Research Award ($4,000) as part of the ”Visualizing Privacy Analysis Results” project led by Professor Marsha Chechik."
+        "Mainly providing opportunities to students who are willing to participate in special events, therefore gain unforgettable experiences and knowledge.",
+        "Organizing events, Teaching principles of MUN (MUN stands for Model United Nations.) making PR materials and managing newsletters."
       ]
     },
-    // Centivizer: {
-    //   jobTitle: "Research Developer @",
-    //   duration: "SEPT 2019 - APR 2020",
-    //   desc: [
-    //     "Researched and developed interactive and neural-activation technologies to stimulate physical and cognitive functions in order to slow the progression of neurodegenerative disorders.",
-    //     "Leveraged WebRTC to develop and maintain a Node.js online video-streaming platform in real-time competitive-mode games to research the effects of active stimulation for those suffering from dementia."
-    //   ]
-    // },
-    // TDSB: {
-    //   jobTitle: "Software Engineer @",
-    //   duration: "SEPT 2019 - DEC 2020",
-    //   desc: [
-    //     "Co-developed homework management software integrable with Google Classroom by utilizing the Python’s Flask micro-framework for the back-end API and Vue.js for the front-end UI, in order to translate business requirements into a functional full-stack application."
-    //   ]
-    // },
-    "Orange Gate": {
-      jobTitle: "Software Engineering Intern @",
-      duration: "MAY 2019 - AUG 2019",
-      desc: [
-        "Developed a Node.js smart home system through Facebook’s Messenger integrated with Bocco sen- sors and other smart devices (Nest camera, TPLink smart plugs) to derive conclusions about the current state of the home",
-        "Identified continuous improvements in data quality, design reports and coding activities, presenting results and findings to internal business stakeholders.",
-        "Relevant technologies/tools used: DialogFlow, Vision, AutoML, Messenger Bot API, MongoDB."
-      ]
-    }
+   
   };
 
-  const handleChange = (event, newValue) => {
+  const handleChange = (_event, newValue) => {
     setValue(newValue);
   };
 

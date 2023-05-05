@@ -19,51 +19,39 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        I am currently a <b>Software Development Engineer</b> at
-        <a href="https://www.aboutamazon.com/"> Amazon</a>, working in the AWS
-        sector under team Route53. At the same time, I am undertaking a
-        part-time <b> Master's of Science</b> in <b>Software Engineering </b>at{" "}
-        <a href="https://www.ox.ac.uk/about">University of Oxford</a>.
+        I am currently a <b>Software Engineer</b> at
+        <a href="https://cashierbasket.com" target="blank"> CashierBasket </a>,working in the frontend side of things.
+        We are a startup located in the of Europe. <br></br>I'm finishing my studies in International Relations.
+        <b>I'm newly enrolled </b>at{" "}
+        <a href="https://www.iu.org/bachelor/cyber-security/" target="blank">International University of Applied Sciences</a>. Studying <b>Cyber Security</b>.
       </p>
     );
     const two = (
       <p>
-        Outside of work, I'm interested in following the developments of
-        science. I also play a lot of video games. And make TikToks.
+       Outside of work, I'm interested in following the developments of AI, financial markets, and cyber security. In my spare time,  I enjoy being part of a big community on Discord where I'm a community moderator. I also participating in CTF (Capture the Flag) games, testing my skills and knowledge against other cybersecurity enthusiasts."
       </p>
     );
-    const three = (
-      <p>
-        <b>Want to chat?</b> Shoot me a message at{" "}
-        <a href="mailto:gazi.jarin@mail.utoronto.ca">
-          gazi.jarin@mail.utoronto.ca
-        </a>{" "}
-        and let's talk.
-      </p>
-    );
-    const desc_items = [one, two];
 
     const tech_stack = [
-      "Javascript ES6+",
+      "*Javascript",
       "Python",
-      "React.js",
-      "Java",
-      "Node.js",
-      "HTML & CSS"
+      "*React.js",
+      "Flutter",
+      "*Node.js",
+      "HTML &TailwindCSS"
     ];
 
-    const tech_items = tech_stack.map(stack => <li>{stack}</li>);
 
     return (
       <div id="about">
         <FadeInSection>
           <div className="section-header ">
-            <span className="section-title">/ about me</span>
+            <span className="section-title">/WhoAmi</span>
           </div>
           <div className="about-content">
             <div className="about-description">
               {[one]}
-              {"Here are some technologies I have been working with:"}
+              {"Here are some technologies I have been working with and learning at the moment*:"}
               <ul className="tech-stack">
                 {tech_stack.map(function (tech_item, i) {
                   return (
