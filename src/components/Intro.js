@@ -4,7 +4,6 @@ import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FadeInSection from "./FadeInSection";
-import coverImage from '../assets/cover.jpg';
 
 
 class Intro extends React.Component {
@@ -24,7 +23,7 @@ class Intro extends React.Component {
   }
   render() {
     return (
-      <div id="intro">
+      <div id="intro" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/cover.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <Typist avgTypingDelay={120}>
           <span className="intro-title">
             {"hey Stranger, "}
@@ -40,11 +39,16 @@ class Intro extends React.Component {
             mixed with Cyber Sercurity, and everything in between.
           </div>
           <a
-            href="mailto:alparslanabdik@gmail.com" target="blank"
+            href="https://www.linkedin.com/in/alparslan-abdikoglu/" target="blank"
             className="intro-contact"
-          >
+            style={{
+              border: '3px solid var(--orange-bright)',
+              borderRadius: '5px',
+              padding: '10px',
+              color: 'whitesmoke'
+            }}>
             <LinkedInIcon></LinkedInIcon>
-            {"  " + "Connect with me on Linked In!"}
+            <span style={{ color: 'whitesmoke' }}>{"  " + "Connect with me on LinkedIn!"}</span>
           </a>
         </FadeInSection>
       </div>

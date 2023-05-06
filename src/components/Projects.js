@@ -1,11 +1,9 @@
 import React from "react";
 import "../styles/Projects.css";
 import FolderOpenRoundedIcon from "@material-ui/icons/FolderOpenRounded";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import OpenInBrowserIcon from "@material-ui/icons/OpenInBrowser";
+
 import FadeInSection from "./FadeInSection";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
 
 class Projects extends React.Component {
@@ -23,15 +21,15 @@ class Projects extends React.Component {
     });
   }
   render() {
-    
-    
+
+
     const projects = {
       "Covid 19 Tracker": {
         desc:
           "An application which uses ( Used) to Show the spread of the COVID.",
         techStack: "api, PHP, HTML",
         link: "https://github.com/AlparslanAbdikoglu/covid-19-tracker",
-       
+
       },
       "The Odin Project": {
         desc:
@@ -58,44 +56,46 @@ class Projects extends React.Component {
         desc:
           "Homelabs are popular among technology enthusiasts, IT professionals, developers, and hobbyists who want to explore and expand their knowledge in areas such as networking, virtualization, servers, storage, automation, and more.",
         techStack: "Docker, Networking, Python, Linux fundamentals",
-        link: "",
-        open: ""
+        link: "https://github.com/AlparslanAbdikoglu/traefik-as-a-reverse-proxy",
+        open: "https://github.com/AlparslanAbdikoglu/traefik-as-a-reverse-proxy"
       },
       "Cyber Security - CTF's": {
         desc:
           "Cybersecurity CTFs cover a wide range of topics within the field, including but not limited to cryptography, web security, network security, reverse engineering, binary exploitation, forensics, and more. Participants may need to analyze code, exploit vulnerabilities, decrypt messages, investigate network traffic, or solve logic puzzles to progress and capture flags.",
-        techStack: "Python",
-        link: "",
-        open: ""
+        techStack: "Python, Linux OS",
+        link: "https://www.hackthebox.com/hacker",
+        open: "https://www.hackthebox.com/hacker"
       }
     };
 
     return (
       <div id="projects">
-        <div className="section-header ">
+        <div className="section-header">
           <span className="section-title">/ Projects you need to see! </span>
         </div>
-        
+
         <div className="project-container">
           <ul className="projects-grid">
             {Object.keys(projects).map((key, i) => (
-              <FadeInSection delay={`${i + 1}00ms`}>
+              <FadeInSection delay={`${i + 1}00ms`} key={i}>
                 <li className="projects-card">
-                  <div className="card-header">
-                    <div className="folder-icon">
-                      <FolderOpenRoundedIcon
-                        style={{ fontSize: 35 }}
-                      ></FolderOpenRoundedIcon>
-                    </div>
-                    <ExternalLinks
-                      githubLink={projects[key]["link"]}
-                      openLink={projects[key]["open"]}
-                    ></ExternalLinks>
-                  </div>
+                  <a href={projects[key]["link"]} target="_blank" className="project-link">
+                    <div className="card-header">
+                      <div className="folder-icon">
+                        <FolderOpenRoundedIcon style={{ fontSize: 35 }} />
+                      </div>
+                      <ExternalLinks
+                        githubLink={projects[key]["link"]["url"]}
+                        openLink={projects[key]["open"]}
+                        target={projects[key]["link"]["target"]}
+                      />
 
-                  <div className="card-title">{key}</div>
-                  <div className="card-desc">{projects[key]["desc"]}</div>
-                  <div className="card-tech">{projects[key]["techStack"]}</div>
+                    </div>
+
+                    <div className="card-title">{key}</div>
+                    <div className="card-desc">{projects[key]["desc"]}</div>
+                    <div className="card-tech">{projects[key]["techStack"]}</div>
+                  </a>
                 </li>
               </FadeInSection>
             ))}
