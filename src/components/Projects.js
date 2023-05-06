@@ -26,46 +26,46 @@ class Projects extends React.Component {
     
     
     const projects = {
-      "TDSB Homework Management Interface": {
+      "Covid 19 Tracker": {
         desc:
-          "An application created for Toronto District School Board, with a Flask back-end and a Vue front-end.",
-        techStack: "Python (Flask), Vue.js, Bootstrap, SQL",
-        link: "https://github.com/gazijarin/TDSBHomeworkManagement",
-        open: "https://tdsb-app.herokuapp.com/"
+          "An application which uses ( Used) to Show the spread of the COVID.",
+        techStack: "api, PHP, HTML",
+        link: "https://github.com/AlparslanAbdikoglu/covid-19-tracker",
+       
       },
-      "Adam A.I.": {
+      "The Odin Project": {
         desc:
-          "A self-learning A.I. that learns to traverse through a complex maze using the genetic algorithm.",
-        techStack: "Javascript, HTML / CSS",
-        link: "https://github.com/gazijarin/adamai",
-        open: "https://gazijarin.github.io/AdamAI/"
+          "A self-learning Resource also known as TOP. The curriculum of The Odin Project covers a wide range of topics and technologies related to web development, including HTML, CSS, JavaScript, Git, databasesThe Odin Project emphasizes hands-on learning through projects. As learners progress through the curriculum.",
+        techStack: "Javascript, HTML / CSS, React js",
+        link: "https://github.com/AlparslanAbdikoglu/TOP-portfolio",
+        open: "https://www.theodinproject.com"
       },
-      "Distributed Logging and Monitoring System": {
+      "Subirat.net": {
         desc:
-          "A system that establishes an ORM connection to a Prisma client in order to communicate logs from microservices.",
-        techStack: "Node.js (Express.js), React.js, PostgreSQL",
+          ".A website where users can download quality subtitles for their films& tv shows  fully open source.",
+        techStack: "MYsql, PHP",
         link:
-          "https://github.com/gazijarin/Distributed-Logging-and-Monitoring-System"
+          "https://subirat.net"
       },
-      "Odin Bot": {
+      "GIF Maker": {
         desc:
           "A Telegram bot that helps you excel on your daily tasks through Node NLP.",
-        techStack: "Javascript, Node.js, Natural NLP, Telegram API",
-        link: "https://github.com/gazijarin/OdinBot",
-        open: ""
-      },
-      "Game Centre": {
-        desc:
-          "An Android app consisting of three board games, including multiplayer, autosave, user authentication, etc.",
-        techStack: "Java, Android Studio",
-        link: "https://github.com/gazijarin/gamecentre",
-        open: ""
-      },
-      "Minimax Stonehenge": {
-        desc:
-          "Two-player, zero-sum game with a strategic Minimax artificial intelligence.",
         techStack: "Python",
-        link: "https://github.com/gazijarin/stonehenge",
+        link: "https://github.com/AlparslanAbdikoglu/GifMaker",
+        open: "with this program you can make a gif out of any video you just need to install 2 dependencies and change the abst path! Make sure the video is in the same folder as the python file."
+      },
+      "Homelab": {
+        desc:
+          "Homelabs are popular among technology enthusiasts, IT professionals, developers, and hobbyists who want to explore and expand their knowledge in areas such as networking, virtualization, servers, storage, automation, and more.",
+        techStack: "Docker, Networking, Python, Linux fundamentals",
+        link: "",
+        open: ""
+      },
+      "Cyber Security - CTF's": {
+        desc:
+          "Cybersecurity CTFs cover a wide range of topics within the field, including but not limited to cryptography, web security, network security, reverse engineering, binary exploitation, forensics, and more. Participants may need to analyze code, exploit vulnerabilities, decrypt messages, investigate network traffic, or solve logic puzzles to progress and capture flags.",
+        techStack: "Python",
+        link: "",
         open: ""
       }
     };

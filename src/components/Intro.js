@@ -1,9 +1,8 @@
 import React from "react";
-
 import "../styles/Intro.css";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
-import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FadeInSection from "./FadeInSection";
 
 class Intro extends React.Component {
@@ -24,7 +23,6 @@ class Intro extends React.Component {
   render() {
     return (
       <div id="intro">
-        
         <Typist avgTypingDelay={120}>
           <span className="intro-title">
             {"hey Stranger, "}
@@ -35,15 +33,15 @@ class Intro extends React.Component {
         <FadeInSection>
           <div className="intro-subtitle">I create stuff on the web</div>
           <div className="intro-desc">
-            I'm a software engineer and Crypto trader you can find me around Budapest or Tokyo [] I have great
+            I'm a software engineer and Crypto trader you can find me around Budapest or Tokyo [東京大好き] I have great
             interest in research & development artificial Intelligence, Blockchain, International Relations
             mixed with Cyber Sercurity, and everything in between.
           </div>
           <a
-            href="mailto:alparslanabdik@gmail.com"
+            href="mailto:alparslanabdik@gmail.com" target="blank"
             className="intro-contact"
           >
-            <EmailRoundedIcon></EmailRoundedIcon>
+            <LinkedInIcon></LinkedInIcon>
             {"  " + "Connect with me on Linked In!"}
           </a>
         </FadeInSection>

@@ -27,7 +27,7 @@
 
 .about-description li::before {
   content: "▹    ";
-  color: var(--green-bright);
+  color: var(--orange-bright);
   position: absolute;
   left: 0;
 }
@@ -62,7 +62,9 @@
   border-radius: 10px;
   margin-left: 30px;
   box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
-  border: none;
+  border: solid;
+  border-image: linear-gradient(to bottom right, #fe5018, #f7f8f8) 10;
+  border-image-width: 10px;
 }
 
 @media only screen and (max-width: 788px) {

@@ -21,14 +21,15 @@ class About extends React.Component {
       <p>
         I am currently a <b>Software Engineer</b> at
         <a href="https://cashierbasket.com" target="blank"> CashierBasket </a>,working in the frontend side of things.
-        We are a startup located in the of Europe. <br></br>I'm finishing my studies in International Relations.
+        We are a startup located in the ❤️ of Europe. <br></br>I'm finishing my studies in International Relations.
         <b>I'm newly enrolled </b>at{" "}
-        <a href="https://www.iu.org/bachelor/cyber-security/" target="blank">International University of Applied Sciences</a>. Studying <b>Cyber Security</b>.
+        <a href="https://www.iu.org/bachelor/cyber-security/" target="blank">International University of Applied Sciences</a>. Studying <b style={{ color: "#fe5018" }}>Cyber Security</b>
+.
       </p>
     );
     const two = (
       <p>
-       Outside of work, I'm interested in following the developments of AI, financial markets, and cyber security. In my spare time,  I enjoy being part of a big community on Discord where I'm a community moderator. I also participating in CTF (Capture the Flag) games, testing my skills and knowledge against other cybersecurity enthusiasts."
+       Outside of work, I'm interested in following the developments of AI, financial markets, and cyber security. In my spare time,  I enjoy being part of a big community on Discord where I'm a community moderator. I also participating in  <b style={{ color: "#fe5018" }}> CTF (Capture the Flag) games,</b> testing my skills and knowledge against other cybersecurity enthusiasts."
       </p>
     );
 
