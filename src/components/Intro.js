@@ -4,6 +4,8 @@ import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FadeInSection from "./FadeInSection";
+import coverImage from '../assets/cover.jpg';
+
 
 class Intro extends React.Component {
   constructor() {
