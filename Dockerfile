@@ -1,23 +1,20 @@
-# Use an official Node.js runtime as the base image
+# Use a base image with Node.js installed
 FROM node:14-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
+# Copy the package.json and yarn.lock files
+COPY package.json yarn.lock ./
 
-# Install project dependencies
-RUN npm install
+# Install the app dependencies
+RUN yarn install --production
 
-# Copy the project files to the working directory
-COPY . .
+# Copy the generated build files
+COPY build ./build
 
-# Build the React app for production
-RUN npm run build
+# Expose the port your app is running on (if necessary)
+EXPOSE 3000
 
-# Expose a port (e.g., 80) to run the React app
-EXPOSE 80
-
-# Define the command to start the app when the container is run
-CMD ["npm", "start"]
+# Start the app
+CMD ["yarn", "start"]
