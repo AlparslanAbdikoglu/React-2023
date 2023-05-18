@@ -59,6 +59,13 @@ class Projects extends React.Component {
         link: "https://github.com/AlparslanAbdikoglu/traefik-as-a-reverse-proxy",
         open: "https://github.com/AlparslanAbdikoglu/traefik-as-a-reverse-proxy"
       },
+      "Freelance Projects": {
+        desc:
+          "Freelance Projects for companies and individuals",
+        techStack: "CMS systems, React.js, figma",
+        link: "https://github.com/AlparslanAbdikoglu/Freelance-showcase",
+        open: "https://github.com/AlparslanAbdikoglu/Freelance-showcase"
+      },
       "Cyber Security - CTF's": {
         desc:
           "Cybersecurity CTFs cover a wide range of topics within the field, including but not limited to cryptography, web security, network security, reverse engineering, binary exploitation, forensics, and more. Participants may need to analyze code, exploit vulnerabilities, decrypt messages, investigate network traffic, or solve logic puzzles to progress and capture flags.",

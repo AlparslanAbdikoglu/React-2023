@@ -23,7 +23,7 @@ class Credits extends React.Component {
           <div className="ending-credits">
             <div>Built and modified by Alparslan. </div>
             <div>designed by Gazi Jarin. </div>
-            <div>All rights reserved. ©</div>
+            <div>All rights reserved. 2023©</div>
           </div>
         </div>
       </FadeInSection>
