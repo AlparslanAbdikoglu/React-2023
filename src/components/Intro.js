@@ -23,7 +23,7 @@ class Intro extends React.Component {
   }
   render() {
     return (
-      <div id="intro" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/cover.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+      <div id="intro">
         <Typist avgTypingDelay={120}>
           <span className="intro-title">
             {"hey Stranger, "}
