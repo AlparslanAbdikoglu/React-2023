@@ -21,7 +21,7 @@ class About extends React.Component {
       <p>
         I am currently a <b>Software Engineer</b> at
         <a href="https://cashierbasket.com" target="blank"> CashierBasket </a>,working in the frontend side of things.
-        We are a startup located in the ❤️ of Europe. <br></br>I'm finishing my studies in International Relations.
+        We are a startup located in the ❤️ of Europe. <br></br>I studied International Relations but currently changing majors.
         <b>I'm newly enrolled </b>at{" "}
         <a href="https://www.iu.org/bachelor/cyber-security/" target="blank">International University of Applied Sciences</a>. Studying <b style={{ color: "#fe5018" }}>Cyber Security</b>
 .
@@ -52,7 +52,7 @@ class About extends React.Component {
           <div className="about-content">
             <div className="about-description">
               {[one]}
-              {"Here are some technologies I have been working with and learning at the moment*:"}
+              {"Here are some technologies I have been working with and deepening my knowledge*:"}
               <ul className="tech-stack">
                 {tech_stack.map(function (tech_item, i) {
                   return (
