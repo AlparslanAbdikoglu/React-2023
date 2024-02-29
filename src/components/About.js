@@ -34,11 +34,11 @@ class About extends React.Component {
     );
 
     const tech_stack = [
-      "*Javascript",
+      "Javascript",
       "Python",
       "*React.js",
       "Flutter",
-      "*Node.js",
+      "*Typescript",
       "HTML &TailwindCSS"
     ];
 

@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Credits.css";
 import FadeInSection from "./FadeInSection";
+import Footer from "./year";
 
 class Credits extends React.Component {
   constructor() {
@@ -23,7 +24,7 @@ class Credits extends React.Component {
           <div className="ending-credits">
             <div>Built and modified by Alparslan. </div>
             <div>designed by Gazi Jarin. </div>
-            <div>All rights reserved. 2023©</div>
+            <Footer></Footer>
           </div>
         </div>
       </FadeInSection>
