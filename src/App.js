@@ -8,6 +8,7 @@ import Credits from "./components/Credits";
 import "./App.css";
 import "./styles/Global.css";
 import "rsuite/dist/styles/rsuite-default.css";
+import Footer from "./components/year";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Experience></Experience>
         <Projects></Projects>
         <Credits></Credits>
+        <Footer></Footer>
       </div>
       <SidebarNav />
     </div>
